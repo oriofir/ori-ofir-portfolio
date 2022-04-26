@@ -1,14 +1,17 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
+import Collectus_Homepage from "./Images/Collectus_Homepage.png";
+import Laura_Homepage from "./Images/Laura_Homepage.png";
+import OR_1_Synth_Homepage from "./Images/OR_1_Synth_Homepage.png";
 
 function Home(props) {
   return (
     <>
       <Carousel interval={5000}>
-        <Carousel.Item>
+        <Carousel.Item className="or-1-synth">
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=First slide&bg=373940"
+            src={OR_1_Synth_Homepage}
             alt="First slide"
           />
           <Carousel.Caption>
@@ -16,10 +19,10 @@ function Home(props) {
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="collectus">
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Second slide&bg=282c34"
+            src={Collectus_Homepage}
             alt="Second slide"
           />
 
@@ -28,10 +31,10 @@ function Home(props) {
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item>
+        <Carousel.Item className="laurarecs">
           <img
             className="d-block w-100"
-            src="holder.js/800x400?text=Third slide&bg=20232a"
+            src={Laura_Homepage}
             alt="Third slide"
           />
 
