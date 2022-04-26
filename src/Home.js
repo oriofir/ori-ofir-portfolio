@@ -1,4 +1,5 @@
 import React from "react";
+import "./home.css";
 import { Carousel, Button } from "react-bootstrap";
 import Collectus_Homepage from "./Images/Collectus_Homepage.png";
 import Laura_Homepage from "./Images/Laura_Homepage.png";
@@ -19,6 +20,8 @@ function Home(props) {
 
   return (
     <>
+      <h1>Ori Ofir </h1>
+      <h3>Fullstack Web Developer</h3>
       <Carousel interval={10000} variant="dark">
         <Carousel.Item className="or-1-synth">
           <img
@@ -38,6 +41,9 @@ function Home(props) {
               A full stack browser synthesizer using Tone.js, React, Python, and
               Django
             </p>
+            <Button variant="outline-dark" onClick={openSynth}>
+              View
+            </Button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="collectus">
@@ -59,6 +65,9 @@ function Home(props) {
               A fullstack application to house collectable items using React,
               MongoDB, Node.js, and Express
             </p>
+            <Button variant="outline-dark" onClick={openCollectus}>
+              View
+            </Button>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="laurarecs">
@@ -80,6 +89,9 @@ function Home(props) {
               Application showcasing LA based record label L.A.U.R.A. Recs using
               React as well as the last.fm API
             </p>
+            <Button variant="outline-dark" onClick={openLaura}>
+              View
+            </Button>
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
