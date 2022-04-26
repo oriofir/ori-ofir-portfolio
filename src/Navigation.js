@@ -1,11 +1,18 @@
 import React from "react";
 import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import "./navigation.css";
 
 function Navigation(props) {
   return (
     <div>
-      <Navbar collapseOnSelect variant="dark" expand="md">
+      <Navbar
+        collapseOnSelect
+        bg="light"
+        variant="dark"
+        expand="md"
+        className="nav"
+      >
         <Nav.Link as={Link} to="/">
           Home
         </Nav.Link>
