@@ -1,47 +1,84 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
+import { Carousel, Button } from "react-bootstrap";
 import Collectus_Homepage from "./Images/Collectus_Homepage.png";
 import Laura_Homepage from "./Images/Laura_Homepage.png";
 import OR_1_Synth_Homepage from "./Images/OR_1_Synth_Homepage.png";
 
 function Home(props) {
+  function openSynth() {
+    window.open(`https://or-1-synthesizer.netlify.app/`);
+  }
+
+  function openCollectus() {
+    window.open(`https://animated-pony-a34044.netlify.app/collections`);
+  }
+
+  function openLaura() {
+    window.open(`https://laurarecs.netlify.app/`);
+  }
+
   return (
     <>
-      <Carousel interval={5000}>
+      <Carousel interval={10000} variant="dark">
         <Carousel.Item className="or-1-synth">
           <img
             className="d-block w-100"
             src={OR_1_Synth_Homepage}
-            alt="First slide"
+            alt="OR-1 Browser Synthesizer"
+            style={{
+              width: "100%",
+              objectFit: "cover",
+              overflow: "hidden",
+              borderRadius: 10,
+            }}
           />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <Carousel.Caption style={{ background: "white" }}>
+            <h3>OR-1 Browser Synthesizer</h3>
+            <p>
+              A full stack browser synthesizer using Tone.js, React, Python, and
+              Django
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="collectus">
           <img
             className="d-block w-100"
             src={Collectus_Homepage}
-            alt="Second slide"
+            alt="Collectus"
+            style={{
+              width: "100%",
+              objectFit: "cover",
+              overflow: "hidden",
+              borderRadius: 10,
+            }}
           />
 
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <Carousel.Caption style={{ background: "white" }}>
+            <h3>Collectus</h3>
+            <p>
+              A fullstack application to house collectable items using React,
+              MongoDB, Node.js, and Express
+            </p>
           </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item className="laurarecs">
           <img
             className="d-block w-100"
             src={Laura_Homepage}
-            alt="Third slide"
+            alt="Laura"
+            style={{
+              width: "100%",
+              objectFit: "cover",
+              overflow: "hidden",
+              borderRadius: 10,
+            }}
           />
 
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
+          <Carousel.Caption style={{ background: "white" }}>
+            <h3>L.A.U.R.A. Recs Website</h3>
             <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+              Application showcasing LA based record label L.A.U.R.A. Recs using
+              React as well as the last.fm API
             </p>
           </Carousel.Caption>
         </Carousel.Item>
