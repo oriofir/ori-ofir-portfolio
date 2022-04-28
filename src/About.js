@@ -1,6 +1,13 @@
 import React from "react";
 
 function About(props) {
+  const handleEmailClick = () => {
+    window.open("mailto: oriofir00@gmail.com");
+  };
+
+  const handleLinkedInCLick = () => {
+    window.open("https://www.linkedin.com/in/oriofir/");
+  };
   return (
     <div>
       <h1>About</h1>
@@ -13,6 +20,21 @@ function About(props) {
         software development for outside the box thinking in order to link
         together culture and optimized human interactions.{" "}
       </p>
+      <h4>Contact:</h4>
+      <div
+        className="contact"
+        onClick={handleEmailClick}
+        style={{ cursor: "pointer" }}
+      >
+        oriofir00@gmail.com
+      </div>
+      <div
+        className="contact"
+        onClick={handleLinkedInCLick}
+        style={{ cursor: "pointer" }}
+      >
+        Linked In
+      </div>
     </div>
   );
 }
