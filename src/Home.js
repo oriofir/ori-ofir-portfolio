@@ -35,7 +35,10 @@ function Home(props) {
               borderRadius: 10,
             }}
           />
-          <Carousel.Caption style={{ background: "white" }}>
+          <Carousel.Caption
+            className="carouselCaption"
+            // style={{ background: "white" }}
+          >
             <h3>OR-1 Browser Synthesizer</h3>
             <p>
               A full stack browser synthesizer using Tone.js, React, Python, and
@@ -59,7 +62,10 @@ function Home(props) {
             }}
           />
 
-          <Carousel.Caption style={{ background: "white" }}>
+          <Carousel.Caption
+            className="carouselCaption"
+            style={{ background: "white" }}
+          >
             <h3>Collectus</h3>
             <p>
               A fullstack application to house collectable items using React,
@@ -83,7 +89,7 @@ function Home(props) {
             }}
           />
 
-          <Carousel.Caption style={{ background: "white" }}>
+          <Carousel.Caption className="carouselCaption">
             <h3>L.A.U.R.A. Recs Website</h3>
             <p>
               Application showcasing LA based record label L.A.U.R.A. Recs using

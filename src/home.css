@@ -7,3 +7,9 @@ h3 {
   display: flex;
   justify-content: center;
 }
+
+.carouselCaption {
+  height: 200px;
+  background-color: white;
+  top: 100px;
+}
