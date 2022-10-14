@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Navigation from "./Navigation";
 import Home from "./Home";
 import About from "./About";
-import Projects from "./Projects";
+// import Projects from "./Projects";
 import Resume from "./Resume";
 
 import "./App.css";
