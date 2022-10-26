@@ -1,3 +1,6 @@
 .nav {
+  display: flex;
   color: black;
+  flex-direction: column;
+
 }

@@ -7,9 +7,18 @@ div {
   display: flex;
   justify-content: center;
 }
-
+/* 
 .carouselCaption {
   height: 200px;
   background-color: white;
   top: 100px;
+} */
+
+.port-img {
+          width: 200px;
+          height: 200px;
+          object-fit:cover;
+          display: flex;
+          border-radius: 10px;
+          flex-direction: row;
 }

@@ -3,6 +3,7 @@ import "./home.css";
 import { Button } from "react-bootstrap";
 import Collectus_Homepage from "./Images/Collectus_Homepage.png";
 import Laura_Homepage from "./Images/Laura_Homepage.png";
+import Responsive_Product_Card_Project from "./Images/Responsive_Product_Card_Project.jpg";
 import OR_1_Synth_Homepage from "./Images/OR_1_Synth_Homepage.png";
 
 function Home(props) {
@@ -18,23 +19,21 @@ function Home(props) {
     window.open(`https://laurarecs.netlify.app/`);
   }
 
+  function openCard() {
+    window.open(`https://peppy-nasturtium-fa6911.netlify.app/`);
+  }
+
   return (
     <>
       <h1>Ori Ofir </h1>
       <h3>Fullstack Web Developer</h3>
 
       <img
-        className="d-block w-100"
+        className="port-img"
         src={OR_1_Synth_Homepage}
         alt="OR-1 Browser Synthesizer"
-        style={{
-          width: "100%",
-          objectFit: "cover",
-          overflow: "hidden",
-          borderRadius: 10,
-        }}
       />
-      <h3>OR-1 Browser Synthesizer</h3>
+      <div>OR-1 Browser Synthesizer</div>
       <p>
         A full stack browser synthesizer using Tone.js, React, Python, and
         Django
@@ -42,17 +41,7 @@ function Home(props) {
       <Button variant="outline-dark" onClick={openSynth}>
         View
       </Button>
-      <img
-        className="d-block w-100"
-        src={Collectus_Homepage}
-        alt="Collectus"
-        style={{
-          width: "100%",
-          objectFit: "cover",
-          overflow: "hidden",
-          borderRadius: 10,
-        }}
-      />
+      <img className="port-img" src={Collectus_Homepage} alt="Collectus" />
 
       <h3>Collectus</h3>
       <p>
@@ -63,17 +52,7 @@ function Home(props) {
         View
       </Button>
 
-      <img
-        className="d-block w-100"
-        src={Laura_Homepage}
-        alt="Laura"
-        style={{
-          width: "100%",
-          objectFit: "cover",
-          overflow: "hidden",
-          borderRadius: 10,
-        }}
-      />
+      <img className="port-img" src={Laura_Homepage} alt="Laura" />
 
       <h3>L.A.U.R.A. Recs Website</h3>
       <p>
@@ -81,6 +60,17 @@ function Home(props) {
         as well as the last.fm API
       </p>
       <Button variant="outline-dark" onClick={openLaura}>
+        View
+      </Button>
+      <img
+        className="port-img"
+        src={Responsive_Product_Card_Project}
+        alt="Laura"
+      />
+
+      <h3>Responsive Product Card</h3>
+      <p>HTML/CSS challenge showcasing basic front end design skills</p>
+      <Button variant="outline-dark" onClick={openCard}>
         View
       </Button>
     </>
