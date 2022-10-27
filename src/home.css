@@ -22,3 +22,7 @@ div {
           border-radius: 10px;
           flex-direction: row;
 }
+
+.button {
+  background-color: var(--primary)
+}
