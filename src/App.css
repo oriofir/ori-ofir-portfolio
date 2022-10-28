@@ -2,6 +2,15 @@ main {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   background-color: var(--background);
   color: var(--type);
+  display: flex;
+  flex-direction: row;
+ }
+
+ .container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  color: var(--type);
  }
 
  h1 {

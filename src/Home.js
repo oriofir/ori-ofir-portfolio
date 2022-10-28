@@ -25,9 +25,6 @@ function Home(props) {
 
   return (
     <>
-      <h1>Ori Ofir </h1>
-      <h3>Fullstack Web Developer</h3>
-
       <img
         className="port-img"
         src={OR_1_Synth_Homepage}
