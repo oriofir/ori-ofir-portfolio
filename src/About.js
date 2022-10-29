@@ -1,5 +1,6 @@
 import React from "react";
 import { Container } from "react-bootstrap";
+import "./About.css";
 
 function About(props) {
   const handleEmailClick = () => {
@@ -11,17 +12,17 @@ function About(props) {
   };
   return (
     <>
-      <Container className="about-cont">
-        <div>
-          <div className="about-title">About</div>
-          <p>
-            I am a skilled fullstack software engineer with a passion for design
-            and creative collaboration based in Los Angeles CA. Experienced in
-            Javascript, Python, HTML5/CSS, React, Node, jquery as well as
-            database frameworks such as MongoDb and SQL. As a designer,
-            musician, and art director, I love taking these passions into the
-            sphere of software development for outside the box thinking in order
-            to link together culture and optimized human interactions.{" "}
+      <Container>
+        <div className="about-cont">
+          <p className="about-body">
+            I’m a software engineer currently working as a freelancer building
+            out recaptcha, css, and form submissions in a Next.js React
+            Application. Experienced in Javascript, Python, HTML5/CSS, React,
+            Node, jquery as well as database frameworks such as MongoDb and SQL.
+            As a designer, musician, and art director, I love taking these
+            passions into the sphere of software development for outside the box
+            thinking in order to link together culture and optimized human
+            interactions.{" "}
           </p>
           <div>Contact:</div>
           <div

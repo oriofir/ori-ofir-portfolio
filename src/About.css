@@ -1,0 +1,10 @@
+.about-cont {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.about-body {
+    padding: 30px;
+    flex-direction: column;
+}
