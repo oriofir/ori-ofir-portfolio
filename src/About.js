@@ -13,7 +13,7 @@ function About(props) {
   return (
     <>
       <Container>
-        <div className="about-cont">
+        <div className="about-container">
           <p className="about-body">
             I’m a software engineer currently working as a freelancer building
             out recaptcha, css, and form submissions in a Next.js React

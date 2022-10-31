@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 
 import Collectus_Homepage from "./Images/Collectus_Homepage.png";
 import Laura_Homepage from "./Images/Laura_Homepage.png";
 import Responsive_Product_Card_Project from "./Images/Responsive_Product_Card_Project.jpg";
 import OR_1_Synth_Homepage from "./Images/OR_1_Synth_Homepage.png";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 function Home(props) {
   function openSynth() {
@@ -23,14 +25,41 @@ function Home(props) {
     window.open(`https://peppy-nasturtium-fa6911.netlify.app/`);
   }
 
+  const boxVariant = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: { opacity: 0, scale: 0 },
+  };
+
+  const control = useAnimation();
+  const [ref, inView] = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      control.start("visible");
+    } else {
+      control.start("hidden");
+    }
+  }, [control, inView]);
+
   return (
     <>
-      <img
+      <motion.img
+        ref={ref}
+        variants={boxVariant}
+        animate={control}
+        initial="hidden"
         className="port-img"
         src={OR_1_Synth_Homepage}
         alt="OR-1 Browser Synthesizer"
       />
-      <div>OR-1 Browser Synthesizer</div>
+      <motion.div
+        ref={ref}
+        variants={boxVariant}
+        animate={control}
+        initial="hidden"
+      >
+        OR-1 Browser Synthesizer
+      </motion.div>
       <p>
         A full stack browser synthesizer using Tone.js, React, Python, and
         Django
