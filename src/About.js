@@ -1,5 +1,6 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Image } from "react-bootstrap";
+import profile_pic from "./Images/profile_pic.jpg";
 import "./About.css";
 
 function About(props) {
@@ -13,6 +14,7 @@ function About(props) {
   return (
     <>
       <Container>
+        <Image className="profile-pic" src={profile_pic}></Image>
         <div className="about-container">
           <p className="about-body">
             I’m a software engineer currently working as a freelancer building
