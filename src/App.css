@@ -1,5 +1,5 @@
 main {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:"Segoe UI";
   /* background-color: var(--background); */
   color: var(--type);
   display: flex;
@@ -9,21 +9,29 @@ main {
  .container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-content: center;
   background-color: var(--background);
   color: var(--type);
  }
 
- h1 {
-  font-family: 'Times New Roman', Times, serif, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ .title-cont {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+
  }
 
- .profile-pic{
-  display: block;
-  width: 600px;
-  height: 500px;
-  border-radius:100px;
-  object-fit: cover;
-  padding: 50px
+ .name {
+  padding: 2em;
+  justify-items: center;
  }
+ 
+ .title{
+
+  justify-items: center;
+  padding: 20px;
+ }
+

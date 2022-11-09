@@ -18,7 +18,7 @@ function About(props) {
         <div className="about-container">
           <p className="about-body">
             I’m a software engineer currently working as a freelancer building
-            out recaptcha, css, and form submissions in a Next.js React
+            out recaptcha, HTML/CSS, and form submissions in a Next.js React
             Application. Experienced in Javascript, Python, HTML5/CSS, React,
             Node, jquery as well as database frameworks such as MongoDb and SQL.
             As a designer, musician, and art director, I love taking these
