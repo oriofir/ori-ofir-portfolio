@@ -4,7 +4,7 @@
   --secondary: #006d77ff;
 --primary: #83c5beff;
 --type: #edf6f9ff;
---background: #0f0f0fff;
+--background: rgb(104, 104, 104);
 }
 
 body {

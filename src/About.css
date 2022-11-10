@@ -17,4 +17,5 @@
     height: 600px;
     border-radius:50px;
     object-fit: cover;
+    position: absolute;
    }

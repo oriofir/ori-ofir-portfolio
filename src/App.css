@@ -8,7 +8,6 @@ main {
 
  .container {
   display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
@@ -18,39 +17,53 @@ main {
 
  .title-cont {
   position: relative;
+  text-align: center;
   display: flex;
   justify-content: center;
   flex-direction:column;
 
  }
 
- @keyframes slideInFromLeft {
+ .profile-pic{
+  width: 700px;
+  height: 600px;
+  border-radius:50px;
+  object-fit: cover;
+  position: inherit;
+ }
+
+ @keyframes slideInFromTop {
   0% {
-    transform: translateX(-100%);
+    transform: translateY(-100%);
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 
 header {  
   /* This section calls the slideInFromLeft animation we defined above */
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromTop;
   
   background: #333;
   padding: 30px;
 }
 
  .name {
-  padding: 2em;
+  padding: 1em;
   justify-items: center;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  font-weight: 400;
+  position: relative;
  }
  
  .title{
 
-  justify-items: center;
-  padding: 20px;
-  animation: 1s ease-out 0s 1 slideInFromLeft;
+  /* justify-items: center; */
+  /* padding-right: 20px; */
+  /* margin-bottom: 4em; */
+  animation: 1s ease-out 0s 1 slideInFromTop;
+  font-weight: 400;
+  position: relative;
  }
 
