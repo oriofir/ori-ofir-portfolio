@@ -12,11 +12,6 @@ import "./App.css";
 function App() {
   return (
     <Container className="container">
-      <div className="title-cont">
-        <h1 className="name">Ori Ofir </h1>
-        <h3 className="title">Fullstack Web Developer</h3>
-      </div>
-
       <About />
       <Projects />
       <Resume />

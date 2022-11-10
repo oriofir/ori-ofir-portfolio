@@ -13,8 +13,12 @@ function About(props) {
   };
   return (
     <>
-      <Container>
+      <div className="title-cont">
         <Image className="profile-pic" src={profile_pic}></Image>
+        <h1 className="name">Ori Ofir </h1>
+        <h3 className="title">Fullstack Web Developer</h3>
+      </div>
+      <Container>
         <div className="about-container">
           <p className="about-body">
             I’m a software engineer currently working as a freelancer building

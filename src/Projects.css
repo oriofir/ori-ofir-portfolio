@@ -2,7 +2,7 @@
   background-color: var(--background);
 }
 
-h1 {
+/* h1 {
   display: flex;
   justify-content: center;
 }
@@ -10,7 +10,7 @@ h1 {
 div {
   display: flex;
   justify-content: center;
-}
+} */
 /* 
 .carouselCaption {
   height: 200px;
