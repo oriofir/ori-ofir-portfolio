@@ -1,5 +1,6 @@
 import React from "react";
 import { Image, Container } from "react-bootstrap";
+import "./Resume.css";
 
 import Ori_Ofir_Single_Page_Resume_Web_Dev from "./Images/Ori_Ofir_Single_Page_Resume_Web_Dev.jpg";
 
@@ -12,6 +13,7 @@ function Resume(props) {
   return (
     <Container>
       <Image
+        className="resume"
         style={{ maxWidth: 1000, cursor: "pointer" }}
         src={Ori_Ofir_Single_Page_Resume_Web_Dev}
         onClick={handleClick}

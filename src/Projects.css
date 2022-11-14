@@ -2,6 +2,21 @@
   background-color: var(--background);
 }
 
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-weight: 300;
+  padding-top: 5em;
+  border: none;
+  
+}
+
+.card-title {
+  font-weight: 800;
+  padding-top: 1em
+}
+
 /* h1 {
   display: flex;
   justify-content: center;
@@ -17,6 +32,33 @@ div {
   background-color: white;
   top: 100px;
 } */
+
+.or1-card {
+  display: flex;
+  width: 20em;
+  
+  
+}
+
+.collectus-card {
+  width: 20em;
+  border: none;
+ 
+}
+
+.laura-card {
+  width: 20em;
+  
+  border: none;
+ 
+}
+
+.responsive-card {
+  width: 20em;
+  
+  border: none;
+ 
+}
 
 
 
@@ -55,6 +97,11 @@ div {
      a {
          text-decoration: none;
      } */
+ }
+
+ .button:hover{
+  background: var(--primary);
+  color: var(--background)
  }
 
 

@@ -31,6 +31,7 @@
     border-radius:50px;
     object-fit: cover;
     
+    
    }
   
    .name {
@@ -58,3 +59,15 @@
     flex-direction: row;
     font-weight: 200;
 } 
+
+.contact {
+    font-weight: 400;
+    flex-direction: row;
+    
+}
+
+.contact-title {
+    font-weight: 800;
+
+}
+
