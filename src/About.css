@@ -14,22 +14,30 @@
     }
   }
 
-  .title-cont {
-    position: relative;
-    text-align: center;
+  .about-container {
     display: flex;
-    justify-content:flex-start;
+    
     flex-direction:column;
+    align-items: flex-start;
+    flex-wrap: wrap;
     padding-top: 100px;
     background: transparent;
   
    }
+
+   /* .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   } */
   
    .profile-pic{
-    width: 700px;
-    height: 600px;
+    width: 400px;
+    height: 400px;
     border-radius:50px;
     object-fit: cover;
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+    
     
     
    }
@@ -37,9 +45,8 @@
    .name {
     padding: .5em;
     justify-items: center;
-    animation: 2s ease-out 0s 1 slideInFromRight;
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
     font-weight: 400;
-    
     background: transparent;
   
    }
@@ -54,20 +61,79 @@
    }
 
  .about-body {
-    /* display: flex; */
+    display: grid;
     padding: 20px;
-    flex-direction: row;
     font-weight: 200;
+    animation: 1.4s ease-out 0s 1 slideInFromRight;
+    grid-row: 2 / span 2;
+grid-column: 2 / span 2;
 } 
-
-.contact {
-    font-weight: 400;
-    flex-direction: row;
-    
-}
 
 .contact-title {
     font-weight: 800;
+    animation: 1.6s ease-out 0s 1 slideInFromRight;
 
 }
+
+.contact-email {
+    font-weight: 400;
+    flex-direction: row;
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+    background-color: var(--primary);
+    width: 200px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--primary);
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    color: var(--primary);
+    font-size: 14px;
+    border-color: var(--primary);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+   padding: .5vh;
+   margin: 5px;
+    
+}
+.contact-linkedin {
+    font-weight: 400;
+    flex-direction: row;
+    animation: 1.5s ease-out 0s 1 slideInFromRight;
+    background-color: var(--primary);
+    width: 200px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--primary);
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    color: var(--primary);
+    font-size: 14px;
+    border-color: var(--primary);
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+   padding: .5vh;
+   margin: 5px;
+    
+}
+
+.contact-email:hover{
+    background: var(--primary);
+    color: var(--background)
+   }
+.contact-linkedin:hover{
+    background: var(--primary);
+    color: var(--background)
+   }
+
+
 

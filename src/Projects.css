@@ -8,13 +8,14 @@
   flex-wrap: wrap;
   font-weight: 300;
   padding-top: 5em;
-  border: none;
+  display: none;
   
 }
 
 .card-title {
   font-weight: 800;
-  padding-top: 1em
+  padding-top: 2em;
+  padding-left: 2em;
 }
 
 /* h1 {
@@ -36,28 +37,21 @@ div {
 .or1-card {
   display: flex;
   width: 20em;
-  
-  
 }
 
 .collectus-card {
   width: 20em;
-  border: none;
+  
  
 }
 
 .laura-card {
   width: 20em;
-  
-  border: none;
- 
 }
 
 .responsive-card {
   width: 20em;
   
-  border: none;
- 
 }
 
 
@@ -102,6 +96,13 @@ div {
  .button:hover{
   background: var(--primary);
   color: var(--background)
+ }
+
+ .text-description {
+  padding-top:30px;
+  padding-bottom: 30px;
+  margin: 0 10px 0 10px;
+  
  }
 
 

@@ -54,7 +54,7 @@ function Home(props) {
             />
 
             <div className="card-title">OR-1 Browser Synthesizer</div>
-            <Card.Text>
+            <Card.Text className="text-description">
               A full stack browser synthesizer using Tone.js, React, Python, and
               Django
             </Card.Text>
@@ -86,7 +86,7 @@ function Home(props) {
             />
 
             <div className="card-title">Collectus</div>
-            <Card.Text>
+            <Card.Text className="text-description">
               A fullstack application to house collectable items using React,
               MongoDB, Node.js, and Express
             </Card.Text>
@@ -118,7 +118,7 @@ function Home(props) {
             />
 
             <div className="card-title">L.A.U.R.A. Recs Website</div>
-            <Card.Text>
+            <Card.Text className="text-description">
               Application showcasing LA based record label L.A.U.R.A. Recs using
               React as well as the last.fm API
             </Card.Text>
@@ -150,7 +150,7 @@ function Home(props) {
             />
 
             <div className="card-title">Responsive Product Card</div>
-            <Card.Text>
+            <Card.Text className="text-description">
               HTML/CSS card showcasing basic front end design skills
             </Card.Text>
             <button

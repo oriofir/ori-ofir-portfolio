@@ -3,6 +3,10 @@ main {
   /* background-color: var(--background); */
   color: var(--type);
   display: flex;
+  display: grid;
+  display: grid;
+    grid-template-columns: 12px 12px 12px;
+    grid-template-rows: 12px 12px 12px;
   flex-direction: row;
  }
 
@@ -16,6 +20,12 @@ main {
   background-color: var(--background);
   color: var(--type);
   
+ }
+
+ .projects-title {
+  padding-top: 50px;
+  font-weight: 800;
+
  }
 
 
