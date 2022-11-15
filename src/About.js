@@ -27,7 +27,8 @@ function About(props) {
           thinking in order to link together culture and optimized human
           interactions.{" "}
         </p>
-
+      </Container>
+      <Container className="contact-container">
         <div className="contact-title">Contact</div>
         <div
           className="contact-email"
