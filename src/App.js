@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
+// import { Container } from "react-bootstrap";
 // import Navigation from "./Navigation";
 import Projects from "./Projects";
 import About from "./About";
@@ -11,12 +11,13 @@ import "./App.css";
 
 function App() {
   return (
-    <Container className="container">
+    <>
       <About />
       <div className="projects-title">Projects</div>
       <Projects />
+      <div className="resume-title">Resume</div>
       <Resume />
-    </Container>
+    </>
   );
 }
 

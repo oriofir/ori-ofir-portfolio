@@ -1,6 +1,4 @@
-* {
-  background-color: var(--background);
-}
+
 
 .card-container {
   display: flex;
@@ -8,7 +6,8 @@
   flex-wrap: wrap;
   font-weight: 300;
   padding-top: 5em;
-  display: none;
+  color: var(--type);
+  /* display: none; */
   
 }
 
@@ -35,22 +34,25 @@ div {
 } */
 
 .or1-card {
-  display: flex;
+  
   width: 20em;
+  border: none;
 }
 
 .collectus-card {
   width: 20em;
-  
+  border: none;
  
 }
 
 .laura-card {
   width: 20em;
+  border: none;
 }
 
 .responsive-card {
   width: 20em;
+  border: none;
   
 }
 
