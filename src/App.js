@@ -13,9 +13,9 @@ function App() {
   return (
     <>
       <About />
-      <div className="projects-title">Projects</div>
+      <div className="projects-title">PROJECTS</div>
       <Projects />
-      <div className="resume-title">Resume</div>
+      <div className="resume-title">RESUME</div>
       <Resume />
     </>
   );

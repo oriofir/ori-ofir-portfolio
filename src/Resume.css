@@ -1,4 +1,6 @@
 .resume {
+    display: flex;
+    align-self: center;
     background: transparent;
     padding: 50px;
 }

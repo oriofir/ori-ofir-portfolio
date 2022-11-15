@@ -2,57 +2,45 @@
 
 .card-container {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
   flex-wrap: wrap;
   font-weight: 300;
-  padding-top: 5em;
+  padding-top: 2em;
   color: var(--type);
-  /* display: none; */
   
 }
 
 .card-title {
   font-weight: 800;
   padding-top: 2em;
-  padding-left: 2em;
+  padding-left: 1em;
 }
-
-/* h1 {
-  display: flex;
-  justify-content: center;
-}
-
-div {
-  display: flex;
-  justify-content: center;
-} */
-/* 
-.carouselCaption {
-  height: 200px;
-  background-color: white;
-  top: 100px;
-} */
 
 .or1-card {
-  
+  display: flex;
   width: 20em;
-  border: none;
+  height: 30em;
+  border: none!important;
 }
 
 .collectus-card {
   width: 20em;
-  border: none;
- 
+  height: 30em;
+  border: none!important;
+  
 }
 
 .laura-card {
   width: 20em;
-  border: none;
+  height: 30em;
+  border: none!important;
 }
 
 .responsive-card {
   width: 20em;
-  border: none;
+  height: 30em;
+  border: none!important;
   
 }
 
@@ -87,6 +75,7 @@ div {
   transition: all 0.2s linear;
  padding: .5vh;
  margin: 5px;
+ display: hidden;
  /* outline: none;
  &.outline {
     
@@ -97,7 +86,9 @@ div {
 
  .button:hover{
   background: var(--primary);
-  color: var(--background)
+  color: var(--background);
+  cursor: pointer;
+
  }
 
  .text-description {

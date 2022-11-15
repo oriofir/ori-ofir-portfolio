@@ -4,10 +4,16 @@
 
 main {
   font-family:"Segoe UI";
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   /* background-color: var(--background); */
   color: var(--type);
   /* display: flex;
   flex-direction: row; */
+  border: none;
  }
 
 

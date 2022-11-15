@@ -31,7 +31,7 @@ function About(props) {
         </Container>
       </Container>
       <Container className="contact-container">
-        <div className="contact-title">Contact</div>
+        <div className="contact-title">CONTACT</div>
         <Container className="contactButtons">
           <div
             className="contact-email"
