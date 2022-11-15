@@ -13,7 +13,7 @@ function App() {
   return (
     <>
       <About />
-      <div className="projects-title">PROJECTS</div>
+
       <Projects />
       <div className="resume-title">RESUME</div>
       <Resume />

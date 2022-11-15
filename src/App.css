@@ -27,13 +27,7 @@ main {
   color: var(--type);
   } */
 
- .projects-title {
-  padding-top: 50px;
-  font-weight: 800;
-  font-size: larger;
-  color: var(--type);
-
- }
+ 
  .resume-title {
   padding-top: 50px;
   font-weight: 800;

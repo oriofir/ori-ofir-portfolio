@@ -44,6 +44,7 @@ function Home(props) {
   return (
     <>
       <Container className="card-container">
+        <div className="projects-title">PROJECTS</div>
         <Card className="or1-card">
           <Card.Body>
             <img
