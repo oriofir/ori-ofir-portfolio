@@ -7,12 +7,19 @@ import About from "./About";
 import Resume from "./Resume";
 
 import "./App.css";
+import TechStack from "./TechStack";
+
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
+
+library.add(faMoon);
 // import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <>
       <About />
+      <TechStack />
       <Projects />
       <Resume />
     </>

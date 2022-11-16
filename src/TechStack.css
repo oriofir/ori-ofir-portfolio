@@ -1,0 +1,14 @@
+.tech-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.languages-title {
+    padding-top: 50px;
+  padding-bottom: 20px;
+  font-weight: 800;
+  font-size: larger;
+  color: var(--type)!important;
+}

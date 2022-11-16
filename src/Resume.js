@@ -11,7 +11,7 @@ function Resume(props) {
     );
   };
   return (
-    <Container>
+    <Container className="resume-container">
       <div className="resume-title">RESUME</div>
       <Image
         className="resume"
