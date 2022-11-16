@@ -43,8 +43,8 @@ function Home(props) {
 
   return (
     <>
+      <div className="projects-title">PROJECTS</div>
       <Container className="card-container">
-        <div className="projects-title">PROJECTS</div>
         <Card className="or1-card">
           <Card.Body>
             <img

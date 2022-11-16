@@ -10,9 +10,9 @@ import "./App.css";
 import TechStack from "./TechStack";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
+import { faC } from "@fortawesome/free-solid-svg-icons";
 
-library.add(faMoon);
+library.add(faC);
 // import { Routes, Route } from "react-router-dom";
 
 function App() {

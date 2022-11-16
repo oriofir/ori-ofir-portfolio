@@ -2,7 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
 
+.icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .languages-title {
@@ -12,3 +18,10 @@
   font-size: larger;
   color: var(--type)!important;
 }
+
+.js-icon, .python-icon, .typescript-icon, .react-icon, .next-icon, .node-icon, .html-icon, .css-icon {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+}
+
