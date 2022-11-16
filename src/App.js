@@ -13,9 +13,7 @@ function App() {
   return (
     <>
       <About />
-
       <Projects />
-      <div className="resume-title">RESUME</div>
       <Resume />
     </>
   );

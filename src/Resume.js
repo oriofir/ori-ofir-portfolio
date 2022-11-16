@@ -12,6 +12,7 @@ function Resume(props) {
   };
   return (
     <Container>
+      <div className="resume-title">RESUME</div>
       <Image
         className="resume"
         style={{ maxWidth: 1000, cursor: "pointer" }}

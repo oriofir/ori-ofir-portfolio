@@ -4,3 +4,11 @@
     background: transparent;
     padding: 50px;
 }
+
+.resume-title {
+    padding-top: 50px;
+    font-weight: 800;
+    font-size: larger;
+    color: var(--type);
+  
+   }
