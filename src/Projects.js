@@ -43,135 +43,137 @@ function Home(props) {
 
   return (
     <>
-      <div className="projects-title">PROJECTS</div>
-      <Container className="card-container">
-        <Card className="or1-card">
-          <Card.Body>
-            <img
-              // s
-              className="port-img"
-              src={OR_1_Synth_Homepage}
-              alt="OR-1 Browser Synthesizer"
-            />
+      <Container className="general-card">
+        <div className="projects-title">PROJECTS</div>
+        <Container className="card-container">
+          <Card className="or1-card">
+            <Card.Body>
+              <img
+                // s
+                className="port-img"
+                src={OR_1_Synth_Homepage}
+                alt="OR-1 Browser Synthesizer"
+              />
 
-            <div className="card-title">OR-1 Browser Synthesizer</div>
-            <Card.Text className="text-description">
-              A full stack browser synthesizer using Tone.js, React, Python, and
-              Django
-            </Card.Text>
-            <button
-              className="button
+              <div className="card-title">OR-1 Browser Synthesizer</div>
+              <Card.Text className="text-description">
+                A full stack browser synthesizer using Tone.js, React, Python,
+                and Django
+              </Card.Text>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openSynth}
-            >
-              Site
-            </button>
-            <button
-              className="button
+                variant="outline-dark"
+                onClick={openSynth}
+              >
+                Site
+              </button>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openSynth}
-            >
-              GitHub
-            </button>
-          </Card.Body>
-        </Card>
-        <Card className="collectus-card">
-          <Card.Body>
-            <img
-              // s
-              className="port-img"
-              src={Collectus_Homepage}
-              alt="Collectus Homepage"
-            />
+                variant="outline-dark"
+                onClick={openSynth}
+              >
+                GitHub
+              </button>
+            </Card.Body>
+          </Card>
+          <Card className="collectus-card">
+            <Card.Body>
+              <img
+                // s
+                className="port-img"
+                src={Collectus_Homepage}
+                alt="Collectus Homepage"
+              />
 
-            <div className="card-title">Collectus</div>
-            <Card.Text className="text-description">
-              A fullstack application to house collectable items using React,
-              MongoDB, Node.js, and Express
-            </Card.Text>
-            <button
-              className="button
+              <div className="card-title">Collectus</div>
+              <Card.Text className="text-description">
+                A fullstack application to house collectable items using React,
+                MongoDB, Node.js, and Express
+              </Card.Text>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openCollectus}
-            >
-              Site
-            </button>
-            <button
-              className="button
+                variant="outline-dark"
+                onClick={openCollectus}
+              >
+                Site
+              </button>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openCollectus}
-            >
-              GitHub
-            </button>
-          </Card.Body>
-        </Card>
-        <Card className="laura-card">
-          <Card.Body>
-            <img
-              // s
-              className="port-img"
-              src={Laura_Homepage}
-              alt="Laura Homepage"
-            />
+                variant="outline-dark"
+                onClick={openCollectus}
+              >
+                GitHub
+              </button>
+            </Card.Body>
+          </Card>
+          <Card className="laura-card">
+            <Card.Body>
+              <img
+                // s
+                className="port-img"
+                src={Laura_Homepage}
+                alt="Laura Homepage"
+              />
 
-            <div className="card-title">L.A.U.R.A. Recs Website</div>
-            <Card.Text className="text-description">
-              Application showcasing LA based record label L.A.U.R.A. Recs using
-              React as well as the last.fm API
-            </Card.Text>
-            <button
-              className="button
+              <div className="card-title">L.A.U.R.A. Recs Website</div>
+              <Card.Text className="text-description">
+                Application showcasing LA based record label L.A.U.R.A. Recs
+                using React as well as the last.fm API
+              </Card.Text>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openLaura}
-            >
-              Site
-            </button>
-            <button
-              className="button
+                variant="outline-dark"
+                onClick={openLaura}
+              >
+                Site
+              </button>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openLaura}
-            >
-              GitHub
-            </button>
-          </Card.Body>
-        </Card>
-        <Card className="responsive-card">
-          <Card.Body>
-            <img
-              // s
-              className="port-img"
-              src={Responsive_Product_Card_Project}
-              alt="Laura Homepage"
-            />
+                variant="outline-dark"
+                onClick={openLaura}
+              >
+                GitHub
+              </button>
+            </Card.Body>
+          </Card>
+          <Card className="responsive-card">
+            <Card.Body>
+              <img
+                // s
+                className="port-img"
+                src={Responsive_Product_Card_Project}
+                alt="Laura Homepage"
+              />
 
-            <div className="card-title">Responsive Product Card</div>
-            <Card.Text className="text-description">
-              HTML/CSS card showcasing basic front end design skills
-            </Card.Text>
-            <button
-              className="button
+              <div className="card-title">Responsive Product Card</div>
+              <Card.Text className="text-description">
+                HTML/CSS card showcasing basic front end design skills
+              </Card.Text>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openCard}
-            >
-              Site
-            </button>
-            <button
-              className="button
+                variant="outline-dark"
+                onClick={openCard}
+              >
+                Site
+              </button>
+              <button
+                className="button
       "
-              variant="outline-dark"
-              onClick={openCard}
-            >
-              GitHub
-            </button>
-          </Card.Body>
-        </Card>
+                variant="outline-dark"
+                onClick={openCard}
+              >
+                GitHub
+              </button>
+            </Card.Body>
+          </Card>
+        </Container>
       </Container>
     </>
   );
