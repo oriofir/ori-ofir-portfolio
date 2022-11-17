@@ -26,7 +26,6 @@
   font-weight: 300;
   padding-top: 2em;
   color: var(--type);
-  background-color: var(--background);
   
 }
 
@@ -35,6 +34,7 @@
   padding-bottom: 20px;
   font-weight: 800;
   font-size: larger;
+  border-bottom: solid var(--primary);
   color: var(--type);
 
  }
@@ -69,7 +69,6 @@
 } */
 
 .card-body:hover {
-  opacity: 1;
   border-color: var(--primary);
   border-style: solid;
   border-width: 2px;
@@ -80,7 +79,6 @@
 .card-body:hover, .card-features:hover{
   opacity: 1;
   /* margin: 0 0.5rem; */
-
   animation: animate__zoomIn; 
   animation-duration: 2s; 
   cursor: pointer;

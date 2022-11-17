@@ -18,6 +18,7 @@
   font-weight: 800;
   font-size: larger;
   color: var(--type)!important;
+  border-bottom: solid var(--primary);
 }
 
 .js-icon, .python-icon, .typescript-icon, .react-icon, .next-icon, .node-icon, .html-icon, .css-icon {
