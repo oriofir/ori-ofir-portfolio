@@ -8,6 +8,7 @@ import Resume from "./Resume";
 
 import "./App.css";
 import TechStack from "./TechStack";
+import "animate.css";
 
 // import { Routes, Route } from "react-router-dom";
 

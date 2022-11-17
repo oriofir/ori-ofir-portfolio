@@ -5,6 +5,7 @@ import Collectus_Homepage from "./Images/Collectus_Homepage.png";
 import Laura_Homepage from "./Images/Laura_Homepage.png";
 import Responsive_Product_Card_Project from "./Images/Responsive_Product_Card_Project.jpg";
 import OR_1_Synth_Homepage from "./Images/OR_1_Synth_Homepage.png";
+import "animate.css";
 
 // import { useInView } from "react-intersection-observer";
 
@@ -56,26 +57,28 @@ function Home(props) {
               />
 
               <div className="card-title">OR-1 Browser Synthesizer</div>
-              <Card.Text className="text-description">
-                A full stack browser synthesizer using Tone.js, React, Python,
-                and Django
-              </Card.Text>
-              <button
-                className="button
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  A full stack browser synthesizer using Tone.js, React, Python,
+                  and Django
+                </Card.Text>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openSynth}
-              >
-                Site
-              </button>
-              <button
-                className="button
+                  variant="outline-dark"
+                  onClick={openSynth}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openSynth}
-              >
-                GitHub
-              </button>
+                  variant="outline-dark"
+                  onClick={openSynth}
+                >
+                  GitHub
+                </button>
+              </Container>
             </Card.Body>
           </Card>
           <Card className="collectus-card">
@@ -88,26 +91,28 @@ function Home(props) {
               />
 
               <div className="card-title">Collectus</div>
-              <Card.Text className="text-description">
-                A fullstack application to house collectable items using React,
-                MongoDB, Node.js, and Express
-              </Card.Text>
-              <button
-                className="button
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  A fullstack application to house collectable items using
+                  React, MongoDB, Node.js, and Express
+                </Card.Text>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openCollectus}
-              >
-                Site
-              </button>
-              <button
-                className="button
+                  variant="outline-dark"
+                  onClick={openCollectus}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openCollectus}
-              >
-                GitHub
-              </button>
+                  variant="outline-dark"
+                  onClick={openCollectus}
+                >
+                  GitHub
+                </button>
+              </Container>
             </Card.Body>
           </Card>
           <Card className="laura-card">
@@ -120,26 +125,28 @@ function Home(props) {
               />
 
               <div className="card-title">L.A.U.R.A. Recs Website</div>
-              <Card.Text className="text-description">
-                Application showcasing LA based record label L.A.U.R.A. Recs
-                using React as well as the last.fm API
-              </Card.Text>
-              <button
-                className="button
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  Application showcasing LA based record label L.A.U.R.A. Recs
+                  using React as well as the last.fm API
+                </Card.Text>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openLaura}
-              >
-                Site
-              </button>
-              <button
-                className="button
+                  variant="outline-dark"
+                  onClick={openLaura}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openLaura}
-              >
-                GitHub
-              </button>
+                  variant="outline-dark"
+                  onClick={openLaura}
+                >
+                  GitHub
+                </button>
+              </Container>
             </Card.Body>
           </Card>
           <Card className="responsive-card">
@@ -152,25 +159,27 @@ function Home(props) {
               />
 
               <div className="card-title">Responsive Product Card</div>
-              <Card.Text className="text-description">
-                HTML/CSS card showcasing basic front end design skills
-              </Card.Text>
-              <button
-                className="button
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  HTML/CSS card showcasing basic front end design skills
+                </Card.Text>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openCard}
-              >
-                Site
-              </button>
-              <button
-                className="button
+                  variant="outline-dark"
+                  onClick={openCard}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                variant="outline-dark"
-                onClick={openCard}
-              >
-                GitHub
-              </button>
+                  variant="outline-dark"
+                  onClick={openCard}
+                >
+                  GitHub
+                </button>
+              </Container>
             </Card.Body>
           </Card>
         </Container>

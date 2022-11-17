@@ -1,9 +1,9 @@
-@keyframes slideInFromRight {
+@keyframes animate__zoomIn {
   0% {
-    transform: translateX(-50%);
+    transform: scale(1, 1);
   }
   100% {
-    transform: translateX(0%);
+    transform: scale(1, 1);
   }
 }
 
@@ -54,6 +54,19 @@
           display: flex;
           border-radius: 10px;
           flex-direction: row;
+}
+
+.card-features {
+  opacity: 0;
+}
+
+.card-features:hover{
+  opacity: 1;
+  margin: 0 0.5rem;
+
+  animation: animate__zoomIn; 
+  animation-duration: 1.5s; 
+  cursor: pointer;
 }
 
 .button {
