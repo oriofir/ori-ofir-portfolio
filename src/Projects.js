@@ -48,7 +48,7 @@ function Home(props) {
         <div className="projects-title">PROJECTS</div>
         <Container className="card-container">
           <Card className="or1-card">
-            <Card.Body>
+            <Card.Body className="card-body">
               <img
                 // s
                 className="port-img"

@@ -1,9 +1,13 @@
 @keyframes animate__zoomIn {
   0% {
     transform: scale(1, 1);
+    
+  } 50% {
+    transform: scale(1,1);
   }
   100% {
     transform: scale(1, 1);
+    
   }
 }
 
@@ -22,6 +26,7 @@
   font-weight: 300;
   padding-top: 2em;
   color: var(--type);
+  background-color: var(--background);
   
 }
 
@@ -51,22 +56,35 @@
           width: 200px;
           height: 200px;
           object-fit:cover;
-          display: flex;
           border-radius: 10px;
-          flex-direction: row;
-}
+  }
 
 .card-features {
   opacity: 0;
 }
 
-.card-features:hover{
+ /* .card-body {
+  background-color: var(--background);
+  background: transparent;
+} */
+
+.card-body:hover {
   opacity: 1;
-  margin: 0 0.5rem;
+  border-color: var(--primary);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  
+}
+
+.card-body:hover, .card-features:hover{
+  opacity: 1;
+  /* margin: 0 0.5rem; */
 
   animation: animate__zoomIn; 
-  animation-duration: 1.5s; 
+  animation-duration: 2s; 
   cursor: pointer;
+ 
 }
 
 .button {
