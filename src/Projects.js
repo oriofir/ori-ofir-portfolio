@@ -50,7 +50,10 @@ function Projects(props) {
         <div className="projects-title">PROJECTS</div>
         <Container className="card-container">
           <Card className="or1-card">
-            <Card.Body className="">
+            <Card.Body
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
+            >
               <img
                 // s
                 className="port-img"
@@ -59,28 +62,30 @@ function Projects(props) {
               />
 
               <div className="card-title">OR-1 Browser Synthesizer</div>
-              <Container className="card-features">
-                <Card.Text className="text-description">
-                  A full stack browser synthesizer using Tone.js, React, Python,
-                  and Django
-                </Card.Text>
-                <button
-                  className="button
+              {isShown && (
+                <Container className="card-features">
+                  <Card.Text className="text-description">
+                    A full stack browser synthesizer using Tone.js, React,
+                    Python, and Django
+                  </Card.Text>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openSynth}
-                >
-                  Site
-                </button>
-                <button
-                  className="button
+                    variant="outline-dark"
+                    onClick={openSynth}
+                  >
+                    Site
+                  </button>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openSynth}
-                >
-                  GitHub
-                </button>
-              </Container>
+                    variant="outline-dark"
+                    onClick={openSynth}
+                  >
+                    GitHub
+                  </button>
+                </Container>
+              )}
             </Card.Body>
           </Card>
           <Card className="collectus-card">
@@ -123,7 +128,10 @@ function Projects(props) {
             </Card.Body>
           </Card>
           <Card className="laura-card">
-            <Card.Body>
+            <Card.Body
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
+            >
               <img
                 // s
                 className="port-img"
@@ -132,32 +140,37 @@ function Projects(props) {
               />
 
               <div className="card-title">L.A.U.R.A. Recs Website</div>
-              <Container className="card-features">
-                <Card.Text className="text-description">
-                  Application showcasing LA based record label L.A.U.R.A. Recs
-                  using React as well as the last.fm API
-                </Card.Text>
-                <button
-                  className="button
+              {isShown && (
+                <Container className="card-features">
+                  <Card.Text className="text-description">
+                    Application showcasing LA based record label L.A.U.R.A. Recs
+                    using React as well as the last.fm API
+                  </Card.Text>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openLaura}
-                >
-                  Site
-                </button>
-                <button
-                  className="button
+                    variant="outline-dark"
+                    onClick={openLaura}
+                  >
+                    Site
+                  </button>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openLaura}
-                >
-                  GitHub
-                </button>
-              </Container>
+                    variant="outline-dark"
+                    onClick={openLaura}
+                  >
+                    GitHub
+                  </button>
+                </Container>
+              )}
             </Card.Body>
           </Card>
           <Card className="responsive-card">
-            <Card.Body>
+            <Card.Body
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
+            >
               <img
                 // s
                 className="port-img"
@@ -166,27 +179,29 @@ function Projects(props) {
               />
 
               <div className="card-title">Responsive Product Card</div>
-              <Container className="card-features">
-                <Card.Text className="text-description">
-                  HTML/CSS card showcasing basic front end design skills
-                </Card.Text>
-                <button
-                  className="button
+              {isShown && (
+                <Container className="card-features">
+                  <Card.Text className="text-description">
+                    HTML/CSS card showcasing basic front end design skills
+                  </Card.Text>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openCard}
-                >
-                  Site
-                </button>
-                <button
-                  className="button
+                    variant="outline-dark"
+                    onClick={openCard}
+                  >
+                    Site
+                  </button>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openCard}
-                >
-                  GitHub
-                </button>
-              </Container>
+                    variant="outline-dark"
+                    onClick={openCard}
+                  >
+                    GitHub
+                  </button>
+                </Container>
+              )}
             </Card.Body>
           </Card>
         </Container>
