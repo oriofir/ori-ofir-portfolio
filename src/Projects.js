@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 import { Card, Container } from "react-bootstrap";
 import Collectus_Homepage from "./Images/Collectus_Homepage.png";
@@ -9,7 +9,9 @@ import "animate.css";
 
 // import { useInView } from "react-intersection-observer";
 
-function Home(props) {
+function Projects(props) {
+  const [isShown, setIsShown] = useState(false);
+
   function openSynth() {
     window.open(`https://or-1-synthesizer.netlify.app/`);
   }
@@ -48,7 +50,7 @@ function Home(props) {
         <div className="projects-title">PROJECTS</div>
         <Container className="card-container">
           <Card className="or1-card">
-            <Card.Body className="card-body">
+            <Card.Body className="">
               <img
                 // s
                 className="port-img"
@@ -82,7 +84,10 @@ function Home(props) {
             </Card.Body>
           </Card>
           <Card className="collectus-card">
-            <Card.Body>
+            <Card.Body
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
+            >
               <img
                 // s
                 className="port-img"
@@ -91,28 +96,30 @@ function Home(props) {
               />
 
               <div className="card-title">Collectus</div>
-              <Container className="card-features">
-                <Card.Text className="text-description">
-                  A fullstack application to house collectable items using
-                  React, MongoDB, Node.js, and Express
-                </Card.Text>
-                <button
-                  className="button
+              {isShown && (
+                <Container className="card-features">
+                  <Card.Text className="text-description">
+                    A fullstack application to house collectable items using
+                    React, MongoDB, Node.js, and Express
+                  </Card.Text>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openCollectus}
-                >
-                  Site
-                </button>
-                <button
-                  className="button
+                    variant="outline-dark"
+                    onClick={openCollectus}
+                  >
+                    Site
+                  </button>
+                  <button
+                    className="button
       "
-                  variant="outline-dark"
-                  onClick={openCollectus}
-                >
-                  GitHub
-                </button>
-              </Container>
+                    variant="outline-dark"
+                    onClick={openCollectus}
+                  >
+                    GitHub
+                  </button>
+                </Container>
+              )}
             </Card.Body>
           </Card>
           <Card className="laura-card">
@@ -188,4 +195,4 @@ function Home(props) {
   );
 }
 
-export default Home;
+export default Projects;

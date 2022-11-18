@@ -26,13 +26,16 @@
   flex-wrap: wrap;
   font-weight: 300;
   padding-top: 2em;
+  padding-bottom: 8em;
+
+  /* margin-bottom: 8em; */
   background: transparent;
   color: var(--type);
   
 }
 
 .projects-title {
-  padding-top: 50px;
+  padding-top: 75px;
   padding-bottom: 20px;
   font-weight: 800;
   font-size: larger;
@@ -50,8 +53,11 @@
 .or1-card, .laura-card, .collectus-card, .responsive-card {
   display: flex;
   width: 15em;
-  height: 30em;
+  height: 20em;
   border: none!important;
+  background: transparent;
+  margin-bottom: 15em;
+  /* margin: 100px; */
 }
 
 .port-img {
@@ -71,6 +77,7 @@
 } */
 
 .card-body:hover {
+  opacity: 1;
   border-color: var(--primary);
   border-style: solid;
   border-width: 2px;
