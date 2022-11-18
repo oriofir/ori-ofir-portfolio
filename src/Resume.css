@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 10px;
 }
 
 .resume {
@@ -16,7 +17,7 @@
     font-weight: 800;
     font-size: larger;
     padding-bottom: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     color: var(--type);
     border-bottom: solid var(--primary);
    }

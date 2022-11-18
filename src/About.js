@@ -16,8 +16,8 @@ function About(props) {
       <Container className="about-container">
         <Image className="profile-pic" src={profile_pic}></Image>
         <Container className="aboutText">
-          <h1 className="name">Ori Ofir </h1>
-          <h3 className="title">Fullstack Web Developer</h3>
+          <h1 className="name">ORI OFIR</h1>
+          <h3 className="title">FREELANCE WEB DEVELOPER</h3>
           <div className="about-body">
             I’m a software engineer currently working as a freelancer building
             out recaptcha, HTML/CSS, and form submissions in a Next.js React
@@ -31,7 +31,7 @@ function About(props) {
         </Container>
       </Container>
       <Container className="contact-container">
-        <div className="contact-title">CONTACT</div>
+        <div className="contact-title">WORK WITH ME</div>
         <Container className="contactButtons">
           <div
             className="contact-email"
@@ -45,7 +45,7 @@ function About(props) {
             onClick={handleLinkedInCLick}
             style={{ cursor: "pointer" }}
           >
-            Linked In
+            LinkedIn
           </div>
         </Container>
       </Container>
