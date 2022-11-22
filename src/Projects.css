@@ -16,6 +16,7 @@
   flex-direction: column;
   align-items: center;
   background: transparent;
+  background-color: var(--background);
 }
 
 .card-container {
@@ -26,7 +27,7 @@
   flex-wrap: wrap;
   font-weight: 300;
   padding-top: 2em;
-  padding-bottom: 8em;
+  padding-bottom: 4em;
 
   /* margin-bottom: 8em; */
   background: transparent;
