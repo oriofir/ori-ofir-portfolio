@@ -28,21 +28,21 @@ function Projects(props) {
     window.open(`https://peppy-nasturtium-fa6911.netlify.app/`);
   }
 
-  // const boxVariant = {
-  //   visible: { opacity: 1, scale: 1 },
-  //   hidden: { opacity: 0, scale: 0 },
-  // };
+  function openCardGit() {
+    window.open(`https://github.com/oriofir/front-end-preview-card`);
+  }
 
-  // const control = useAnimation();
-  // const [ref, inView] = useInView();
+  function openSynthGit() {
+    window.open(`https://github.com/oriofir/or-1-synth-project`);
+  }
 
-  // useEffect(() => {
-  //   if (inView) {
-  //     control.start("visible");
-  //   } else {
-  //     control.start("hidden");
-  //   }
-  // }, [control, inView]);
+  function openCollectusGit() {
+    window.open(`https://github.com/Team-This-Is-Fine`);
+  }
+
+  function openLauraGit() {
+    window.open(`https://github.com/Team-This-Is-Fine`);
+  }
 
   return (
     <>
@@ -80,7 +80,7 @@ function Projects(props) {
                     className="button
       "
                     variant="outline-dark"
-                    onClick={openSynth}
+                    onClick={openSynthGit}
                   >
                     GitHub
                   </button>
@@ -119,7 +119,7 @@ function Projects(props) {
                     className="button
       "
                     variant="outline-dark"
-                    onClick={openCollectus}
+                    onClick={openCollectusGit}
                   >
                     GitHub
                   </button>
@@ -158,7 +158,7 @@ function Projects(props) {
                     className="button
       "
                     variant="outline-dark"
-                    onClick={openLaura}
+                    onClick={openLauraGit}
                   >
                     GitHub
                   </button>
@@ -196,7 +196,7 @@ function Projects(props) {
                     className="button
       "
                     variant="outline-dark"
-                    onClick={openCard}
+                    onClick={openCardGit}
                   >
                     GitHub
                   </button>
