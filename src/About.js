@@ -17,7 +17,7 @@ function About(props) {
         <Image className="profile-pic" src={profile_pic}></Image>
         <Container className="aboutText">
           <h1 className="name">ORI OFIR</h1>
-          <h3 className="title">FREELANCE WEB DEVELOPER</h3>
+          <h3 className="title">FREELANCE SOFTWARE ENGINEER</h3>
           <div className="about-body">
             I’m a software engineer currently working as a freelancer building
             out recaptcha, HTML/CSS, and form submissions in a Next.js React
