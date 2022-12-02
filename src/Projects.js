@@ -6,6 +6,7 @@ import Laura_Homepage from "./Images/Laura_Homepage.png";
 import Responsive_Product_Card_Project from "./Images/Responsive_Product_Card_Project.jpg";
 import OR_1_Synth_Homepage from "./Images/OR_1_Synth_Homepage.png";
 import "animate.css";
+import laconic_homepage from "./Images/laconic_homepage.png";
 
 // import { useInView } from "react-intersection-observer";
 
@@ -44,11 +45,58 @@ function Projects(props) {
     window.open(`https://github.com/Team-This-Is-Fine`);
   }
 
+  function openLaconic() {
+    window.open("https://www.laconic.com/");
+  }
+
+  function openLaconicGit() {
+    window.open("https://github.com/LaconicNetwork");
+  }
+
   return (
     <>
       <Container className="general-card">
         <div className="projects-title">PROJECTS</div>
         <Container className="card-container">
+          <Card className="laconic-card">
+            <Card.Body
+              onMouseEnter={() => setIsShown(true)}
+              onMouseLeave={() => setIsShown(false)}
+            >
+              <img
+                // s
+                className="port-img"
+                src={laconic_homepage}
+                alt="laconic-homepage"
+              />
+
+              <div className="card-title">Laconic Network</div>
+              {isShown && (
+                <Container className="card-features">
+                  <Card.Text className="text-description">
+                    Site for the Laconic Network using React, Typescript,
+                    Next.js, Node, and Hubspot API
+                  </Card.Text>
+                  <button
+                    className="button
+      "
+                    variant="outline-dark"
+                    onClick={openLaconic}
+                  >
+                    Site
+                  </button>
+                  <button
+                    className="button
+      "
+                    variant="outline-dark"
+                    onClick={openLaconicGit}
+                  >
+                    GitHub
+                  </button>
+                </Container>
+              )}
+            </Card.Body>
+          </Card>
           <Card className="or1-card">
             <Card.Body
               onMouseEnter={() => setIsShown(true)}
