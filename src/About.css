@@ -71,12 +71,12 @@
     max-width: 500px;
     font-weight: 400;
     animation: 3s ease-out 0s 1 slideInFromRight;
-    background: transparent;
-    background-color: var(--primary);
-    background: transparent;
+    /* background: transparent; */
+    background-color: var(--background);
+    /* background: transparent; */
     color: var(--primary);
+    
     z-index: 3;
-    background: transparent;
     color: var(--type);
     font-size: 18px;
     border-color: var(--primary);

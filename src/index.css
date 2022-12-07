@@ -2,7 +2,7 @@
 
 :root{
   --secondary: #006d77ff;
---primary: #83c5beff;
+--primary: rgb(0, 255, 229);
 --type: #edf6f9ff;
 --background: rgb(28, 28, 28);
 }
