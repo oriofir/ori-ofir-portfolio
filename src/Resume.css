@@ -21,3 +21,36 @@
     color: var(--type);
     border-bottom: solid var(--primary);
    }
+
+   .res-download {
+    display: flex;
+    font-weight: 400;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: var(--primary);
+    width: 200px;
+    cursor: pointer;
+    background: transparent;
+    color: var(--primary);
+    position: relative;
+    z-index: 3;
+    background: transparent;
+    color: var(--primary);
+    font-size: 14px;
+    border-color: var(--primary);
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    padding: 20px 40px;
+    text-transform: uppercase;
+    transition: all 0.2s linear;
+   padding: .5vh;
+   margin: 5px;
+   }
+
+   .res-download:hover{
+    background: var(--primary);
+    color: var(--background)
+   }
