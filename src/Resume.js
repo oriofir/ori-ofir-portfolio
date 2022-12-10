@@ -10,11 +10,31 @@ function Resume(props) {
   //     "https://docs.google.com/document/d/1Pdg6seUzxzDU1tsypwpi6qjEE9rJEnIxzpkH9cAz1ZI/edit"
   //   );
   // };
+
+  const downloadPDF = () => {
+    fetch("___ Ori Ofir Single Page Resume Web Dev (1).pdf").then(
+      (response) => {
+        response.blob().then((blob) => {
+          const fileURL = window.URL.createObjectURL(blob);
+          let alink = document.createElement("a");
+          alink.href = fileURL;
+          alink.download = "___ Ori Ofir Single Page Resume Web Dev (1).pdf";
+          alink.click();
+        });
+      }
+    );
+  };
   return (
     <Container className="resume-container">
       <div className="resume-title">RESUME</div>
 
-      <button className="res-download">DOWNLOAD RESUME</button>
+      <button type="button" className="res-download" onClick={downloadPDF}>
+        Download Resume
+      </button>
+
+      {/* <button className="res-download" value="download" onClick={downloadPDF}>
+        DOWNLOAD RESUME
+      </button> */}
 
       <Image
         className="resume"
