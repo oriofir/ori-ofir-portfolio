@@ -1,9 +1,10 @@
 * {
   background-color: var(--background);
+  font-family:"Helvetica Neue";
 }
 
 main {
-  font-family:"Segoe UI";
+  
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
