@@ -32,14 +32,15 @@
   /* margin-bottom: 8em; */
   background: transparent;
   color: var(--type);
+  background-color: var(--background);
   
 }
 
 .projects-title {
   padding-top: 75px;
   padding-bottom: 20px;
-  font-weight: 800;
-  font-size: larger;
+  font-weight: 400;
+  font-size: 2rem;
   border-bottom: solid var(--primary);
   color: var(--type);
 
@@ -56,7 +57,7 @@
   width: 15em;
   height: 20em;
   border: none!important;
-  background: transparent;
+  /* background: transparent; */
   margin-bottom: 15em;
   /* margin: 100px; */
 }
@@ -92,6 +93,7 @@
   animation: animate__zoomIn; 
   animation-duration: 2s; 
   cursor: pointer;
+  background-color: var(--background);
  
 }
 

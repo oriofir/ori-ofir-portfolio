@@ -105,9 +105,9 @@
 }
 
 .contact-title {
-    font-weight: 800;
+    font-weight: 400;
     /* justify-items: center; */
-    font-size: larger;
+    font-size: 2rem;
     position: relative;
     animation: 1.6s ease-out 0s 1 slideInFromRight;
     padding-bottom: 10px;
