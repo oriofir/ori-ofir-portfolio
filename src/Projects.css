@@ -43,6 +43,7 @@
   font-size: 2rem;
   border-bottom: solid var(--primary);
   color: var(--type);
+  letter-spacing: 0.1ch;
 
  }
 
@@ -57,6 +58,7 @@
   width: 15em;
   height: 20em;
   border: none!important;
+  background-color: var(--background);
   /* background: transparent; */
   margin-bottom: 15em;
   /* margin: 100px; */

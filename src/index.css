@@ -1,7 +1,7 @@
 @import "bootstrap/dist/css/bootstrap.min.css";
 
 :root{
-  --secondary: #006d77ff;
+  --secondary: rgb(144, 255, 244);
 --primary: rgb(0, 255, 229);
 --type: #edf6f9ff;
 --background: rgb(11, 11, 11);

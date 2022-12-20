@@ -20,6 +20,7 @@
   font-size: 2rem;
   color: var(--type)!important;
   border-bottom: solid var(--primary);
+  letter-spacing: 0.1ch;
 }
 
 .js-icon, .python-icon, .typescript-icon, .react-icon, .next-icon, .node-icon, .html-icon, .css-icon {
