@@ -83,19 +83,24 @@
 .card-body:hover {
   opacity: 1;
   border-color: var(--primary);
+  background-color: var(--background);
   border-style: solid;
   border-width: 2px;
   border-radius: 10px;
+  transition-delay: .2s; /* delays for 1 second */
+-webkit-transition-delay: .2s; /* for Safari & Chrome */
   
 }
 
 .card-body:hover, .card-features:hover{
   opacity: 1;
   /* margin: 0 0.5rem; */
-  animation: animate__zoomIn; 
-  animation-duration: 2s; 
+  /* animation: animate__zoomIn;  */
+  /* animation-duration: 2s;  */
   cursor: pointer;
   background-color: var(--background);
+  transition-delay: .2s; /* delays for 1 second */
+-webkit-transition-delay: .2s; /* for Safari & Chrome */
  
 }
 

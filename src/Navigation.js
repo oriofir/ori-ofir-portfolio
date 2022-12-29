@@ -1,32 +1,28 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Nav, NavItem, NavLink } from "reactstrap";
 import "./navigation.css";
 
 function Navigation(props) {
   return (
     <div>
-      <Navbar
-        collapseOnSelect
-        bg="light"
-        variant="dark"
-        expand="md"
-        className="nav"
-      >
-        <Nav.Link as={Link} to="/">
-          Home
-        </Nav.Link>
-        <Nav.Link as={Link} to="/about">
-          About
-        </Nav.Link>
-        <Nav.Link as={Link} to="/resume">
-          Resume
-        </Nav.Link>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav></Nav>
-        </Navbar.Collapse>
-      </Navbar>
+      <Nav vertical>
+        <NavItem>
+          <NavLink href="#" active>
+            Active
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink href="#">Link</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink disabled href="#">
+            Disabled
+          </NavLink>
+        </NavItem>
+      </Nav>
     </div>
   );
 }

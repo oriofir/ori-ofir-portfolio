@@ -2,7 +2,7 @@ import React from "react";
 import { Image, Container } from "react-bootstrap";
 import "./Resume.css";
 
-import Ori_Ofir_Single_Page_Resume_Web_Dev from "./Images/Ori_Ofir_Single_Page_Resume_Web_Dev.jpg";
+import Ori_Ofir_Single_Page_Resume_Web_Dev from "./Images/___ Ori Ofir Single Page Resume Web Dev (1)_Page_1.jpg";
 
 function Resume(props) {
   // const handleClick = () => {
@@ -12,17 +12,15 @@ function Resume(props) {
   // };
 
   const downloadPDF = () => {
-    fetch("___ Ori Ofir Single Page Resume Web Dev (1).pdf").then(
-      (response) => {
-        response.blob().then((blob) => {
-          const fileURL = window.URL.createObjectURL(blob);
-          let alink = document.createElement("a");
-          alink.href = fileURL;
-          alink.download = "___ Ori Ofir Single Page Resume Web Dev (1).pdf";
-          alink.click();
-        });
-      }
-    );
+    fetch("___ Ori Ofir Single Page Resume Web Dev.pdf").then((response) => {
+      response.blob().then((blob) => {
+        const fileURL = window.URL.createObjectURL(blob);
+        let alink = document.createElement("a");
+        alink.href = fileURL;
+        alink.download = "___ Ori Ofir Single Page Resume Web Dev (1).pdf";
+        alink.click();
+      });
+    });
   };
   return (
     <Container className="resume-container">
