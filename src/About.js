@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Image } from "react-bootstrap";
-import profile_pic from "./Images/profile_pic.jpeg";
+import portfolio_pic from "./Images/portfolio_pic.jpg";
 import "./About.css";
 
 function About(props) {
@@ -14,7 +14,7 @@ function About(props) {
   return (
     <>
       <Container className="about-container">
-        <Image className="profile-pic" src={profile_pic}></Image>
+        <Image className="profile-pic" src={portfolio_pic}></Image>
         <Container className="aboutText">
           <h1 className="name">ORI OFIR</h1>
           <h3 className="title">FREELANCE SOFTWARE ENGINEER</h3>
