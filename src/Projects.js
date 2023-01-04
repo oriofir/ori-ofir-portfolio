@@ -71,36 +71,39 @@ function Projects(props) {
               />
 
               <div className="card-title">Laconic Network</div>
-              {isShown && (
-                <Container className="card-features">
+
+              <Container className="card-features">
+                {isShown ? (
                   <Card.Text className="text-description">
                     Site for the Laconic Network using React, Typescript,
                     Next.js, Node, and Hubspot API
                   </Card.Text>
-                  <button
-                    className="button
+                ) : (
+                  ""
+                )}
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openLaconic}
-                  >
-                    Site
-                  </button>
-                  <button
-                    className="button
+                  variant="outline-dark"
+                  onClick={openLaconic}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openLaconicGit}
-                  >
-                    GitHub
-                  </button>
-                </Container>
-              )}
+                  variant="outline-dark"
+                  onClick={openLaconicGit}
+                >
+                  GitHub
+                </button>
+              </Container>
             </Card.Body>
           </Card>
           <Card className="or1-card">
             <Card.Body
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}
+            // onMouseEnter={() => setIsShown(true)}
+            // onMouseLeave={() => setIsShown(false)}
             >
               <img
                 // s
@@ -110,36 +113,36 @@ function Projects(props) {
               />
 
               <div className="card-title">OR-1 Browser Synthesizer</div>
-              {isShown && (
-                <Container className="card-features">
-                  <Card.Text className="text-description">
-                    A full stack browser synthesizer using Tone.js, React,
-                    Python, and Django
-                  </Card.Text>
-                  <button
-                    className="button
+              {/* {isShown && ( */}
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  A full stack browser synthesizer using Tone.js, React, Python,
+                  and Django
+                </Card.Text>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openSynth}
-                  >
-                    Site
-                  </button>
-                  <button
-                    className="button
+                  variant="outline-dark"
+                  onClick={openSynth}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openSynthGit}
-                  >
-                    GitHub
-                  </button>
-                </Container>
-              )}
+                  variant="outline-dark"
+                  onClick={openSynthGit}
+                >
+                  GitHub
+                </button>
+              </Container>
+              {/* )} */}
             </Card.Body>
           </Card>
           <Card className="collectus-card">
             <Card.Body
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}
+            // onMouseEnter={() => setIsShown(true)}
+            // onMouseLeave={() => setIsShown(false)}
             >
               <img
                 // s
@@ -149,36 +152,36 @@ function Projects(props) {
               />
 
               <div className="card-title">Collectus</div>
-              {isShown && (
-                <Container className="card-features">
-                  <Card.Text className="text-description">
-                    A fullstack application to house collectable items using
-                    React, MongoDB, Node.js, and Express
-                  </Card.Text>
-                  <button
-                    className="button
+              {/* {isShown && ( */}
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  A fullstack application to house collectable items using
+                  React, MongoDB, Node.js, and Express
+                </Card.Text>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openCollectus}
-                  >
-                    Site
-                  </button>
-                  <button
-                    className="button
+                  variant="outline-dark"
+                  onClick={openCollectus}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openCollectusGit}
-                  >
-                    GitHub
-                  </button>
-                </Container>
-              )}
+                  variant="outline-dark"
+                  onClick={openCollectusGit}
+                >
+                  GitHub
+                </button>
+              </Container>
+              {/* )} */}
             </Card.Body>
           </Card>
           <Card className="laura-card">
             <Card.Body
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}
+            // onMouseEnter={() => setIsShown(true)}
+            // onMouseLeave={() => setIsShown(false)}
             >
               <img
                 // s
@@ -188,36 +191,36 @@ function Projects(props) {
               />
 
               <div className="card-title">L.A.U.R.A. Recs Website</div>
-              {isShown && (
-                <Container className="card-features">
-                  <Card.Text className="text-description">
-                    Application showcasing LA based record label L.A.U.R.A. Recs
-                    using React as well as the last.fm API
-                  </Card.Text>
-                  <button
-                    className="button
+              {/* {isShown && ( */}
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  Application showcasing LA based record label L.A.U.R.A. Recs
+                  using React as well as the last.fm API
+                </Card.Text>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openLaura}
-                  >
-                    Site
-                  </button>
-                  <button
-                    className="button
+                  variant="outline-dark"
+                  onClick={openLaura}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openLauraGit}
-                  >
-                    GitHub
-                  </button>
-                </Container>
-              )}
+                  variant="outline-dark"
+                  onClick={openLauraGit}
+                >
+                  GitHub
+                </button>
+              </Container>
+              {/* )} */}
             </Card.Body>
           </Card>
           <Card className="responsive-card">
             <Card.Body
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}
+            // onMouseEnter={() => setIsShown(true)}
+            // onMouseLeave={() => setIsShown(false)}
             >
               <img
                 // s
@@ -227,29 +230,29 @@ function Projects(props) {
               />
 
               <div className="card-title">Responsive Product Card</div>
-              {isShown && (
-                <Container className="card-features">
-                  <Card.Text className="text-description">
-                    HTML/CSS card showcasing basic front end design skills
-                  </Card.Text>
-                  <button
-                    className="button
+              {/* {isShown && ( */}
+              <Container className="card-features">
+                <Card.Text className="text-description">
+                  HTML/CSS card showcasing basic front end design skills
+                </Card.Text>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openCard}
-                  >
-                    Site
-                  </button>
-                  <button
-                    className="button
+                  variant="outline-dark"
+                  onClick={openCard}
+                >
+                  Site
+                </button>
+                <button
+                  className="button
       "
-                    variant="outline-dark"
-                    onClick={openCardGit}
-                  >
-                    GitHub
-                  </button>
-                </Container>
-              )}
+                  variant="outline-dark"
+                  onClick={openCardGit}
+                >
+                  GitHub
+                </button>
+              </Container>
+              {/* )} */}
             </Card.Body>
           </Card>
         </Container>

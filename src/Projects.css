@@ -65,19 +65,31 @@
   /* margin: 100px; */
 }
 
+.card-features {
+  opacity: 0;
+}
+
+.card-features:hover {
+  opacity: 1;
+  transition: .4s;
+}
+
+
+
 .or1-card:hover, .laura-card:hover, .collectus-card:hover, .responsive-card:hover, .laconic-card:hover {
+  /* opacity: 1; */
     background: transparent;
   color: var(--primary);
   position: relative;
   z-index: 2;
-  background: transparent;
   color: var(--type);
-  border-color: var(--primary);
-  border-style: solid;
+  border-color: none!important;
+  /* border-style: solid; */
   border-width: 2px;
   border-radius: 10px;
   transition: all 0.2s linear;
   padding: .5vh;
+  cursor: pointer;
 }
 
 .port-img {
