@@ -13,13 +13,14 @@
 }
 
 .resume-title {
-    padding-top: 50px;
-    font-weight: 800;
-    font-size: larger;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    color: var(--type);
+    padding-top: 100px;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 2rem;
     border-bottom: solid var(--primary);
+    color: var(--type);
+    letter-spacing: 0.1ch;
    }
 
    .res-download {

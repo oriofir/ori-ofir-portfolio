@@ -25,7 +25,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  font-weight: 300;
+  font-weight: 200;
   padding-top: 2em;
   padding-bottom: 4em;
 
@@ -37,8 +37,9 @@
 }
 
 .projects-title {
-  padding-top: 75px;
+  padding-top: 100px;
   padding-bottom: 20px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 2rem;
   border-bottom: solid var(--primary);
@@ -50,7 +51,7 @@
 .card-title {
   font-weight: 800;
   padding-top: 2em;
-  padding-left: 1em;
+  padding-left: .5em;
 }
 
 .or1-card, .laura-card, .collectus-card, .responsive-card, .laconic-card {
@@ -64,6 +65,21 @@
   /* margin: 100px; */
 }
 
+.or1-card:hover, .laura-card:hover, .collectus-card:hover, .responsive-card:hover, .laconic-card:hover {
+    background: transparent;
+  color: var(--primary);
+  position: relative;
+  z-index: 2;
+  background: transparent;
+  color: var(--type);
+  border-color: var(--primary);
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 10px;
+  transition: all 0.2s linear;
+  padding: .5vh;
+}
+
 .port-img {
           width: 200px;
           height: 200px;
@@ -71,38 +87,10 @@
           border-radius: 10px;
   }
 
-/* .card-features {
-  opacity: 0;
-} */
-
- /* .card-body {
-  background-color: var(--background);
-  background: transparent;
-} */
-
-.card-body:hover {
-  opacity: 1;
-  border-color: var(--primary);
-  background-color: var(--background);
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 10px;
-  transition-delay: .2s; /* delays for 1 second */
--webkit-transition-delay: .2s; /* for Safari & Chrome */
   
-}
 
-.card-features:hover{
-  opacity: 1;
-  /* margin: 0 0.5rem; */
-  /* animation: animate__zoomIn;  */
-  /* animation-duration: 2s;  */
-  cursor: pointer;
-  background-color: var(--background);
-  transition-delay: .2s; /* delays for 1 second */
--webkit-transition-delay: .2s; /* for Safari & Chrome */
- 
-}
+
+
 
 .button {
   background-color: var(--primary);
@@ -141,9 +129,12 @@
  }
 
  .text-description {
-  padding-top:30px;
-  padding-bottom: 30px;
-  margin: 0 10px 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 5em;
+  /* padding-top:30px; */
+  /* padding-bottom: 3ch; */
+  
   
  }
 
