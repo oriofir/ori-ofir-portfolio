@@ -92,7 +92,7 @@
   
 }
 
-.card-body:hover, .card-features:hover{
+.card-features:hover{
   opacity: 1;
   /* margin: 0 0.5rem; */
   /* animation: animate__zoomIn;  */

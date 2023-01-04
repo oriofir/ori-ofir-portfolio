@@ -16,17 +16,13 @@ main {
   
  }
 
- /* .App {
-  font-family: sans-serif;
-  text-align: center;
-} */
-
 section {
   display: grid;
   place-items: center;
   height: 100vh;
   font-size: 32px;
   font-weight: bold;
+ 
   
 }
 
@@ -47,13 +43,14 @@ section {
   position: -webkit-sticky;
   position: sticky;
   top: -5px;
-  z-index: 2;
+  z-index: 4;
   height: 70px;
   min-height: 70px;
   width: calc(100% - 1.5rem);
   background-color: var(--background);
   padding: 0 1rem;
   box-shadow: 0 0.125rem 0.25rem 0 rgb(0 0 0 / 11%);
+  color: var(--type);
 }
 
 .nav__container {
@@ -76,6 +73,7 @@ section {
 
 .active {
   font-weight: bold;
+  color: var(--primary);
 }
 
 ul {
@@ -84,14 +82,18 @@ ul {
   font-size: 0.9rem;
   list-style: none;
   padding: 0;
+  color: var(--primary);
 }
 
 li {
   cursor: pointer;
+  color: #ffffff;
+  
 }
 
 li:hover {
   text-decoration: underline;
+  color: var(--primary);
 }
 
 
