@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Projects.css";
 import { Card, Container } from "react-bootstrap";
 import Collectus_Homepage from "./Images/Collectus_Homepage.png";
@@ -11,7 +11,7 @@ import laconic_homepage from "./Images/laconic_homepage.png";
 // import { useInView } from "react-intersection-observer";
 
 function Projects(props) {
-  const [isShown, setIsShown] = useState(false);
+  // const [isShown, setIsShown] = useState(false);
 
   function openSynth() {
     window.open(`https://or-1-synthesizer.netlify.app/`);
@@ -59,10 +59,7 @@ function Projects(props) {
         <div className="projects-title">PROJECTS</div>
         <Container className="card-container">
           <Card className="laconic-card">
-            <Card.Body
-              onMouseEnter={() => setIsShown(true)}
-              onMouseLeave={() => setIsShown(false)}
-            >
+            <Card.Body>
               <img
                 // s
                 className="port-img"
@@ -73,14 +70,11 @@ function Projects(props) {
               <div className="card-title">Laconic Network</div>
 
               <Container className="card-features">
-                {isShown ? (
-                  <Card.Text className="text-description">
-                    Site for the Laconic Network using React, Typescript,
-                    Next.js, Node, and Hubspot API
-                  </Card.Text>
-                ) : (
-                  ""
-                )}
+                <Card.Text className="text-description">
+                  Site for the Laconic Network using React, Typescript, Next.js,
+                  Node, and Hubspot API
+                </Card.Text>
+
                 <button
                   className="button
       "
